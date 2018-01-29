@@ -11,9 +11,6 @@ function runScript() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  var button = document.getElementById('brentify');
-  button.addEventListener('click', function() {
-    runScript();
-  })
+chrome.browserAction.onClicked.addListener(function(tab) {
+  runScript();
 });
