@@ -1,16 +1,7 @@
 function runScript() {
-  var script = `
-  var paragraphs = document.getElementsByTagName("p");
-  for(var i = 0; i < paragraphs.length; i++) {
-    paragraphs[i].innerHTML = "YOU HAVE BEEN BRENTIFIED!";
-  }
-  `
-
-  chrome.tabs.executeScript({
-    code: script
-  });
+  chrome.tabs.executeScript({ null, { file: 'script.js' } });
 }
 
-chrome.browserAction.onClicked.addListener(function(tab) {
+chrome.browserAction.onClicked.addListener(function() {
   runScript();
 });
