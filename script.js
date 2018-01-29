@@ -1,19 +1,3 @@
-var paragraphs = document.getElementsByTagName("p");
-
-function getRandomSentenceIndex(splitParagraph) {
-  return Math.floor(Math.random() * splitParagraph.length);
-}
-
-function insertSentence(splitParagraph, index) {
-  index === 0 ? splitParagraph[index] = "YOU HAVE BEEN BRENTIFIED!" : splitParagraph[index] = ". YOU HAVE BEEN BRENTIFIED!";
-  return splitParagraph.join('');
-}
-
-for (var i = 0; i < paragraphs.length; i++) {
-  var splitParagraph = paragraphs[i].innerHTML.split('.');
-  paragraphs[i].innerHTML = insertSentence(splitParagraph, getRandomSentenceIndex(splitParagraph));
-};
-
 var quotes = [
   "I suppose I’ve created an atmosphere where I’m a friend first and a boss second. Probably an entertainer third.",
   "When people say to me: would you rather be thought of as a funny man or a great boss? My answer’s always the same, to me, they’re not mutually exclusive.",
@@ -37,3 +21,23 @@ var quotes = [
   "You see all these white middle-class fuddy duddies going, ‘Oh, we’ve got to find the new equivalent’. They’re looking in Oxford and Cambridge. No. Dr Dre, yeah. Ice T. They’re the equivalent of Wordsworth.",
   "I don’t think he could have done better if he’d heard what he was playing, in my opinion."
 ]
+
+var paragraphs = document.getElementsByTagName("p");
+
+function getRandomSentenceIndex(splitParagraph) {
+  return Math.floor(Math.random() * splitParagraph.length);
+}
+
+function insertSentence(splitParagraph, index) {
+  index === 0 ? splitParagraph[index] = getRandomQuote() : splitParagraph[index] = ". " + getRandomQuote();
+  return splitParagraph.join('');
+}
+
+function getRandomQuote() {
+  return quotes[Math.floor(Math.random() * quotes.length)];
+}
+
+for (var i = 0; i < paragraphs.length; i++) {
+  var splitParagraph = paragraphs[i].innerHTML.split('.');
+  paragraphs[i].innerHTML = insertSentence(splitParagraph, getRandomSentenceIndex(splitParagraph));
+};
