@@ -13,3 +13,10 @@ $ git clone https://github.com/cazwazacz/brentify.git
 - Click 'Load unpacked extension...'
 - Select the 'brentify' directory you cloned above
 - Visit any page and click the Brentify icon on the Chrome toolbar! Enjoy!
+
+To-do:
+---
+
+- Extract quotes
+- Test
+- Deploy
