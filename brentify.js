@@ -5,7 +5,13 @@ function getRandomSentenceIndex(splitParagraph) {
 }
 
 function insertSentence(splitParagraph, index) {
-  index === 0 ? splitParagraph[index] = getRandomQuote() : splitParagraph[index] = " " + getRandomQuote();
+  if (index === 0 ) {
+    splitParagraph[index] = getRandomQuote();
+  } else if (index === splitParagraph.length - 1) {
+    splitParagraph[index] = " " + getRandomQuote() + ".";
+  } else {
+    splitParagraph[index] = " " + getRandomQuote();
+  }
   return splitParagraph.join('.');
 }
 
