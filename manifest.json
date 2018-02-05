@@ -7,7 +7,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["brentify.js"]
+      "js": ["quotes.js", "brentify.js"]
     }
   ],
   "browser_action": {},
