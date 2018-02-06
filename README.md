@@ -13,7 +13,7 @@ $ git clone https://github.com/cazwazacz/brentify.git
 - On the top right, enable 'Developer mode'
 - Click 'Load unpacked extension...'
 - Select the 'brentify' directory you cloned above
-- Visit any page and click the Brentify icon on the Chrome toolbar! Enjoy!
+- Ensure that the extension is enabled and visit any page, enjoy!
 
 To-do:
 ---
