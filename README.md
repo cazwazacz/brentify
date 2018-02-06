@@ -18,6 +18,6 @@ $ git clone https://github.com/cazwazacz/brentify.git
 To-do:
 ---
 
-- Extract quotes
+- ~~Extract quotes~~
 - Test
 - Deploy
