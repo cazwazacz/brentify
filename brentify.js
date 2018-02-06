@@ -5,12 +5,13 @@ function getRandomSentenceIndex(splitParagraph) {
 }
 
 function insertSentence(splitParagraph, index) {
+  var randomQuote = getRandomQuote();
   if (index === 0 ) {
-    splitParagraph[index] = getRandomQuote();
+    splitParagraph[index] = randomQuote;
   } else if (index === splitParagraph.length - 1) {
-    splitParagraph[index] = " " + getRandomQuote() + ".";
+    splitParagraph[index] = " " + randomQuote + ".";
   } else {
-    splitParagraph[index] = " " + getRandomQuote();
+    splitParagraph[index] = " " + randomQuote;
   }
   return splitParagraph.join('.');
 }
