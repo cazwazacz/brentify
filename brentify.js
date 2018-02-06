@@ -21,6 +21,6 @@ function getRandomQuote() {
 }
 
 for (var i = 0; i < paragraphs.length; i++) {
-  var splitParagraph = paragraphs[i].innerHTML.split('.');
-  paragraphs[i].innerHTML = insertSentence(splitParagraph, getRandomSentenceIndex(splitParagraph));
+  var splitParagraph = paragraphs[i].innerText.split('.');
+  paragraphs[i].innerText = insertSentence(splitParagraph, getRandomSentenceIndex(splitParagraph));
 };
