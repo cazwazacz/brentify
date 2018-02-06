@@ -1,5 +1,5 @@
 # Brentify
-![gif](https://media.giphy.com/media/xUOwGe5i2nBASrn4di/giphy.gif)
+![gif](https://media.giphy.com/media/xThtag8tOpTGClYTeg/giphy.gif)
 #### A silly little Google Chrome extension that replaces random sentences on the page with David Brent quotes. A must-have if you love the UK Office!
 
 How to use:
