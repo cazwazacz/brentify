@@ -1,5 +1,5 @@
 # Brentify
-![gif](https://media.giphy.com/media/xThtag8tOpTGClYTeg/giphy.gif)
+![Alt text](assets/screenshot.png "Optional Title")
 #### A silly little Google Chrome extension that replaces random sentences on the page with David Brent quotes. A great little way to make your friends/foes go WTF.
 
 How to use:
