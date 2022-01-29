@@ -13,5 +13,10 @@
   "browser_action": {},
   "permissions": [
     "activeTab"
-  ]
+  ],
+  "icons": {
+    "16": "assets/brentify_icon16.png",
+    "48": "assets/brentify_icon48.png",
+   "128": "assets/brentify_icon128.png"
+  }
 }
